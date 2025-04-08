@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Phelipe & Isadora - Códigos do Coração</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #ffeaa7, #fab1a0);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #d63031;
+      font-size: 38px;
+      text-shadow: 2px 2px #00000070;
+    }
+    img {
+      width: 220px;
+      border-radius: 50%;
+      margin: 10px;
+      box-shadow: 0 0 15px #d63031;
+    }
+    button {
+      background-color: #d63031;
+      color: white;
+      font-size: 18px;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+      box-shadow: 2px 2px 5px #000;
+    }
+    #mensagem {
+      margin-top: 30px;
+      font-size: 20px;
+      color: #2d3436;
+      font-weight: bold;
+    }
+    audio {
+      margin-top: 25px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Phelipe, Isadora & Gabriel: O Trio Elétrico do Amor</h1>
+
+  <img src="https://i.imgur.com/pdEO7qv.png" alt="Gabriel">
+  <img src="https://i.imgur.com/vzYtPsd.png" alt="Phelipe">
+  <img src="https://i.imgur.com/D3U7r2e.png" alt="Isadora Grialda">
+
+  <p>Quando Phelipe disse “vou estudar com o Gabriel”, Isadora apareceu com look de hacker e a relação virou um HTML5 apaixonado!</p>
+
+  <button onclick="mostrarMensagem()">Ver a Profecia</button>
+  <div id="mensagem"></div>
+
+  <audio controls autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" type="audio/mpeg">
+    Seu navegador não suporta o áudio.
+  </audio>
+
+  <script>
+    function mostrarMensagem() {
+      const frases = [
+        "Phelipe e Isadora: unidos pelo código e pelo coração.",
+        "Gabriel só queria ensinar JavaScript, mas virou cupido digital.",
+        "Isadora disse: 'Ou o Phelipe ou o VS Code!'",
+        "Três corações, uma conexão Wi-Fi e muito pastel no intervalo."
+      ];
+      const escolhida = frases[Math.floor(Math.random() * frases.length)];
+      document.getElementById("mensagem").textContent = escolhida;
+    }
+  </script>
+</body>
+</html>
